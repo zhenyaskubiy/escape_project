@@ -398,22 +398,30 @@ button:hover {
     flex-wrap: wrap;
     justify-content: center;
 }
-form{
+.form{
     height: 150px;
 }
-#email-field, #password-field{
+#name-field::placeholder, #email-field::placeholder, #password-field::placeholder{
+    position: absolute;
+    color: #918a7d;
+    margin-left: 15px;
+}
+#name-field, #email-field, #password-field{
     width: 300px;
     height: 35px;
     border-radius: 3px;
     border: none;
 }
+#email-field{
+    margin-top: 20px;
+}
 #password-field{
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .submit-button{
     display: block;
     color: black;
     background-color: rgb(202, 192, 192);
-    margin: 10px auto;
+    margin: 20px auto;
 }
 /*FEATURED-POST-1 PAGE*/
