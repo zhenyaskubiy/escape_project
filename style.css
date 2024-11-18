@@ -456,7 +456,7 @@ button:hover {
     height: 280px;
     padding-top: 184px;
     background-image: url(images/category-hero-photo.jpg);
-    background-size: auto, cover;
+    background-size: cover;
     background-position: center;
 }
 .category-hero-conteiner{
@@ -581,4 +581,13 @@ button:hover {
 }
 .cat-collection-item:hover{
     transform: translate(0px, -5px);
+}
+/*ABOUT ME*/
+.about-hero-section{
+    position: relative;
+    height: 280px;
+    padding-top: 184px;
+    background-image: url(images/about-hero-conteiner.jpg);
+    background-size: cover;
+    background-position: center;
 }
