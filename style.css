@@ -589,6 +589,18 @@ button:hover {
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: multiply;
 }
+.about-hero-conteiner{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+.about-hero-header{
+    margin-top: -65px;
+    color: white;
+    font-size: 4vw;
+    line-height: 51px;
+    letter-spacing: 2px;
+}
 .my-photo{
     width: 250px;
     height: 297px;
@@ -667,7 +679,7 @@ button:hover {
         width: 100%;
     }
 }
-/*FEATURED POST 1*/
+/*FEATURED POSTS*/
 .fp-hero-section, .fp-second-hero-section{
     position: relative;
     height: 280px;
