@@ -724,3 +724,127 @@ button:hover {
 .fp-second-hero-section{
     background-image: url(images/featured-image-2.jpg);
 }
+
+/*NATURE*/
+.nature-main-section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.nature-hero-section {
+    position: relative;
+    height: 280px;
+    padding-top: 184px;
+    background-image: url(images/hero-photo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+.nature-hero-conteiner{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+.nature-hero-header{
+    margin-top: -65px;
+    color: white;
+    font-size: 50px;
+    line-height: 51px;
+    letter-spacing: 2px;
+}
+.card.rotating-card {
+    perspective: 150rem;
+    box-shadow: none;
+    background: none;
+    margin-top: 20px;
+  }
+  
+.card-side {
+    transition: all 0.8s ease;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+  
+.card-side.back {
+    transform: rotateY(-180deg);
+}
+  
+.card:hover .card-side.front {
+    transform: rotateY(180deg);
+}
+  
+.card:hover .card-side.back {
+    transform: rotateY(0deg);
+}
+
+.card {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  height: 320px;
+  width: 360px;
+  padding: 8px;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  background-size: cover;
+}
+
+.card h3 {
+  width: 100%;
+  text-align: center;
+  margin-top: 40%;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+}
+
+.card p {
+    text-align: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.card-side {
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  background-size: cover;
+}
+.card-side.back{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+.card-side.front.swi{
+  background-image: url();
+}
+
+.card-side.back.swi{
+  background-image: url(images/switz.jpg);
+}
+
+.card-side.front.ukr{
+  background-image: url();
+}
+
+.card-side.back.ukr{
+  background-image: url(images/ukr.jpg);
+}
+.card-side.front.spa{
+  background-image: url();
+}
+
+.card-side.back.spa{
+  background-image: url(images/spain.jpg);
+}
