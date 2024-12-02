@@ -14,7 +14,7 @@ body{
     position: relative;
     height: 500px;
     padding-top: 184px;
-    background-image: linear-gradient(135deg, rgba(30, 33, 33, 0.82) 1%, rgba(32, 32, 32, 0.14) 98%), url(images/hero-photo.jpg);
+    background-image: linear-gradient(135deg, rgba(30, 33, 33, 0.82) 1%, rgba(32, 32, 32, 0.14) 98%), url(images/cat-5.jpg);
     background-position: 0px 0px, 50% 50%;
     background-size: auto, cover;
 }
@@ -90,23 +90,23 @@ button {
     padding-right: 31px;
     padding-bottom: 12px;
     padding-left: 31px;
-    border: #dd783f;
+    border: #ffffff;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
-    background-color: #dd783f;
+    background-color: #ffffff;
     transition-property: background-color, color;
     transition-duration: 200ms, 200ms;
     transition-timing-function: ease, ease;
     font-family: Lora, sans-serif;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: 300;
-    font-size: 12px;
+    font-size: 13px;
     transition: transform 0.1s ease, box-shadow 0.2s ease, background-color 0.2s ease, filter 0.2s ease;
 }
 button:hover {
-    background-color: #f17228;
+    background-color: #6428f1;
     color: white;
     transform: scale(1.01);
     box-shadow: 0 0 10px #fdf9f6, 0 0 20px #f17228, 0 0 30px #fcccb0;
@@ -364,8 +364,27 @@ button:hover {
     font-size: 12px;
     line-height: 35px;
 }
+
+.recent-posts{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 10px;
+}
+.recent-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.recent-title h2{
+    font-size: 18px;
+    margin: 30px 0px 0px 0px;
+}
 .footer-section{
-    background-image: linear-gradient(135deg, rgba(30, 33, 33, 0.82) 1%, rgba(32, 32, 32, 0.14) 98%), url(images/footer-bg.jpg);
+    background-image: linear-gradient(135deg, rgba(30, 33, 33, 0.82) 1%, rgba(32, 32, 32, 0.14) 98%), url(images/footer.jpg);
     height: 450px;
     background-size: auto, cover;
 }
@@ -452,8 +471,10 @@ button:hover {
     position: relative;
     height: 280px;
     padding-top: 184px;
-    background-image: url(images/category-hero-photo.jpg);
-    background-size: cover;
+    background-image: url(images/categ.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    background-size:cover;
     background-position: center;
 }
 .category-hero-conteiner{
@@ -523,7 +544,7 @@ button:hover {
     text-align: center;
 }
 .cat-collection-item:nth-child(1) .cat-thumbnail {
-    background-image: url('images/cat-1.jpg');
+    background-image: url('images/hero-photo.jpg');
 }
 
 .cat-collection-item:nth-child(2) .cat-thumbnail {
@@ -539,7 +560,7 @@ button:hover {
 }
 
 .cat-collection-item:nth-child(5) .cat-thumbnail {
-    background-image: url('images/cat-5.jpg');
+    background-image: url('images/travel.jpg');
 }
 
 .cat-collection-item:nth-child(6) .cat-thumbnail {
@@ -732,6 +753,7 @@ button:hover {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
 .nature-hero-section {
     position: relative;
     height: 280px;
@@ -788,34 +810,48 @@ button:hover {
   display: inline-block;
   box-sizing: border-box;
   height: 320px;
-  width: 360px;
+  width: 260px;
   padding: 8px;
-  border-radius: 1rem;
+  border-radius: 3px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
   background-size: cover;
 }
 
 .card h3 {
-  width: 100%;
-  text-align: center;
-  margin-top: 40%;
-  font-size: 30px;
-  color: rgb(0, 0, 0);
+    width: 100%;
+    text-align: left;
+    margin-top: 62%;
+    margin-left: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
 }
-
-.card p {
-    text-align: center;
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-    margin-right: 15px;
-    margin-left: 15px;
+.card p{
+    width: 100%;
+    text-align: left;
+    margin-left: 10px;
+    color: rgb(51, 51, 51);
 }
-
+.card img.author-img{
+    height: 20px;
+    width: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.card p.author-title{
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 40px;
+}
 .card-side {
-  border-radius: 1rem;
+  border-radius: 3px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
   background-size: cover;
+}
+.card-side.front.swi.img{
+    background-image: url('images/nature-post.jpg');
+    height: 150px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 .card-side.back{
     display: flex; 
@@ -823,28 +859,135 @@ button:hover {
     align-items: center; 
     text-align: center; 
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgb(255, 255, 255);
     background-blend-mode: multiply;
 }
 .card-side.front.swi{
-  background-image: url();
+    background-image: url();
 }
 
 .card-side.back.swi{
-  background-image: url(images/switz.jpg);
-}
-
-.card-side.front.ukr{
   background-image: url();
 }
-
-.card-side.back.ukr{
-  background-image: url(images/ukr.jpg);
+/*PHOTO*/
+.photo-hero-section {
+    position: relative;
+    height: 280px;
+    padding-top: 184px;
+    background-image: url(images/cat-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
 }
-.card-side.front.spa{
-  background-image: url();
+.photo-hero-conteiner{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
 }
-
-.card-side.back.spa{
-  background-image: url(images/spain.jpg);
+.photo-hero-header{
+    margin-top: -65px;
+    color: white;
+    font-size: 50px;
+    line-height: 51px;
+    letter-spacing: 2px;
+}
+/*RELAX*/
+.relax-hero-section {
+    position: relative;
+    height: 280px;
+    padding-top: 184px;
+    background-image: url(images/cat-3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+.relax-hero-conteiner{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+.relax-hero-header{
+    margin-top: -65px;
+    color: white;
+    font-size: 50px;
+    line-height: 51px;
+    letter-spacing: 2px;
+}
+/*VACATION*/
+.vacation-hero-section {
+    position: relative;
+    height: 280px;
+    padding-top: 184px;
+    background-image: url(images/cat-4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+.vacation-hero-conteiner{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+.vacation-post-conteiner{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 80px;
+}
+.vacation-hero-header{
+    margin-top: -65px;
+    color: white;
+    font-size: 50px;
+    line-height: 51px;
+    letter-spacing: 2px;
+}
+/*TRIP*/
+.trip-hero-section {
+    position: relative;
+    height: 280px;
+    padding-top: 184px;
+    background-image: url(images/travel.jpg );
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+.trip-hero-conteiner{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+.trip-hero-header{
+    margin-top: -65px;
+    color: white;
+    font-size: 50px;
+    line-height: 51px;
+    letter-spacing: 2px;
+}
+/*ADV*/
+.adv-hero-section {
+    position: relative;
+    height: 280px;
+    padding-top: 184px;
+    background-image: url(images/adv.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+.adv-hero-conteiner{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+.adv-hero-header{
+    margin-top: -65px;
+    color: white;
+    font-size: 50px;
+    line-height: 51px;
+    letter-spacing: 2px;
 }
