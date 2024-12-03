@@ -1,6 +1,7 @@
 /*HOME PAGE*/
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 *{
+    
     box-sizing: border-box;
     font-family: Lora, sans-serif;
 }
@@ -364,7 +365,6 @@ button:hover {
     font-size: 12px;
     line-height: 35px;
 }
-
 .recent-posts{
     width: 60%;
     display: flex;
@@ -818,7 +818,7 @@ button:hover {
 }
 
 .card h3 {
-    width: 100%;
+    width: 90%;
     text-align: left;
     margin-top: 62%;
     margin-left: 10px;
@@ -826,7 +826,7 @@ button:hover {
     font-weight: 600;
 }
 .card p{
-    width: 100%;
+    width: 95%;
     text-align: left;
     margin-left: 10px;
     color: rgb(51, 51, 51);
@@ -838,6 +838,7 @@ button:hover {
     margin-left: 10px;
 }
 .card p.author-title{
+    width: 50%;
     position: absolute;
     margin-top: -25px;
     margin-left: 40px;
@@ -861,6 +862,10 @@ button:hover {
     height: 100%;
     background-color: rgb(255, 255, 255);
     background-blend-mode: multiply;
+}
+.card-side.back p{
+    margin: 20px;
+    font-size: 1.5vh;
 }
 .card-side.front.swi{
     background-image: url();
