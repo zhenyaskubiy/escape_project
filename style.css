@@ -863,9 +863,10 @@ button:hover {
     background-color: rgb(255, 255, 255);
     background-blend-mode: multiply;
 }
-.card-side.back p{
-    margin: 20px;
-    font-size: 1.5vh;
+@media (max-width: 768px) {
+    .card-side.back p {
+        font-size: 1.5vh;
+    }
 }
 .card-side.front.swi{
     background-image: url();
